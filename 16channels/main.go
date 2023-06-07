@@ -29,7 +29,7 @@ func main() {
 		wg.Done()
 	}(wg, myCh)
 
-	//send only addeds a small comment here
+	//send only addedsd a small comment here
 	go func(wg *sync.WaitGroup, ch chan<- int) {
 		myCh <- 5
 		myCh <- 6
