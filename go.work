@@ -1,0 +1,18 @@
+go 1.20
+
+use ./1basics
+use ./2varaibles
+use ./3userinput
+use ./4conversion
+use ./5pointers
+use ./6arrays
+use ./7slices
+use ./8maps
+use ./9struc_loops_func
+use ./10defer
+use ./11files
+use ./12webRequest
+use ./13interfaces
+use ./14concurrency
+use ./15mutex
+use ./16channels
