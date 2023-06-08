@@ -29,7 +29,7 @@ func main() {
 		wg.Done()
 	}(wg, myCh)
 
-	//send only
+	//send only this is to checkout
 	go func(wg *sync.WaitGroup, ch chan<- int) {
 		myCh <- 5
 		myCh <- 6
