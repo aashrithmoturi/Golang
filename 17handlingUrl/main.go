@@ -27,6 +27,7 @@ func main() {
 		fmt.Println(key, value)
 	}
 
+	//& is important
 	partOfUrl := &url.URL{
 		Scheme:   "https",
 		Host:     "lco.dev",
@@ -34,6 +35,7 @@ func main() {
 		RawQuery: "user=ash",
 	}
 
+	//.string() parse it
 	fmt.Println(partOfUrl.String())
 
 }
