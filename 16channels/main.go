@@ -37,4 +37,12 @@ func main() {
 		wg.Done()
 	}(wg, myCh)
 	wg.Wait()
+	//send only this is in testing
+	go func(wg *sync.WaitGroup, ch chan<- int) {
+		myCh <- 5
+		myCh <- 6
+		close(myCh)
+		wg.Done()
+	}(wg, myCh)
+	wg.Wait()
 }
